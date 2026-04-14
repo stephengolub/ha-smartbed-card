@@ -3,7 +3,7 @@
 A Home Assistant custom Lovelace card for smart adjustable beds integrated via [smartbed-mqtt](https://github.com/richardhopton/smartbed-mqtt).
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
-[![GitHub Release](https://img.shields.io/github/release/sgolub/smartbed-card.svg)](https://github.com/sgolub/smartbed-card/releases)
+[![GitHub Release](https://img.shields.io/github/release/stephengolub/ha-smartbed-card.svg)](https://github.com/stephengolub/ha-smartbed-card/releases)
 
 ## Features
 
@@ -49,7 +49,7 @@ Works with all bed types supported by **smartbed-mqtt**:
 
 ### Manual
 
-1. Download `smartbed-card.js` from the [latest release](https://github.com/sgolub/smartbed-card/releases/latest)
+1. Download `smartbed-card.js` from the [latest release](https://github.com/stephengolub/ha-smartbed-card/releases/latest)
 2. Copy it to `config/www/smartbed-card.js`
 3. Add a Lovelace resource:
    ```yaml
@@ -94,7 +94,7 @@ compact: false                   # compact layout (default: false)
 ## Development
 
 ```bash
-git clone https://github.com/sgolub/smartbed-card
+git clone https://github.com/stephengolub/ha-smartbed-card
 cd smartbed-card
 npm install
 
