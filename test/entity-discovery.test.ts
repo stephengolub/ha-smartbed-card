@@ -187,7 +187,8 @@ describe('classifyEntities - massage', () => {
   it('classifies massage mode select', () => {
     const ents = entities('select.bedroom_bed_massage_mode');
     const result = classifyEntities(ents, 'bedroom_bed');
-    expect(result.massage.mode).toBe('select.bedroom_bed_massage_mode');
+    expect(result.massage.mode).toBeDefined();
+    expect(result.massage.mode?.entity_id).toBe('select.bedroom_bed_massage_mode');
   });
 });
 

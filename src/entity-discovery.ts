@@ -148,7 +148,7 @@ export function classifyEntities(entities: RegistryEntity[], devicePrefix: strin
   const programPresets: NamedEntity[] = [];
   const massageSliders: SliderEntity[] = [];
   const massageSteppers: NamedEntity[] = [];
-  let massageMode: string | undefined;
+  let massageMode: NamedEntity | undefined;
   const sensors: SensorEntity[] = [];
   const switches: NamedEntity[] = [];
   const lights: NamedEntity[] = [];
@@ -189,7 +189,7 @@ export function classifyEntities(entities: RegistryEntity[], devicePrefix: strin
       case 'select': {
         const base = stripSide(t);
         if (base.includes('massage_mode') || base.includes('massage_wave')) {
-          massageMode = entity_id;
+          massageMode = { entity_id, name };
         } else {
           selects.push({ entity_id, name });
         }

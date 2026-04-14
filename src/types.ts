@@ -17,6 +17,7 @@ export interface SmartbedCardConfig extends LovelaceCardConfig {
   name?: string;
   show_visualization?: boolean;
   show_presets?: boolean;
+  show_program_presets?: boolean;
   show_massage?: boolean;
   show_sensors?: boolean;
   show_controls?: boolean;
@@ -27,6 +28,7 @@ export interface SmartbedCardConfig extends LovelaceCardConfig {
 export const DEFAULT_CONFIG: Partial<SmartbedCardConfig> = {
   show_visualization: true,
   show_presets: true,
+  show_program_presets: false,
   show_massage: true,
   show_sensors: true,
   show_controls: true,
@@ -64,7 +66,7 @@ export interface SliderEntity extends NamedEntity {
 export interface MassageEntities {
   sliders: SliderEntity[];
   steppers: NamedEntity[];
-  mode?: string; // select entity_id
+  mode?: NamedEntity; // select entity
 }
 
 /** Sensor entity reference */
