@@ -1,0 +1,42 @@
+{
+  "name": "smartbed-card",
+  "version": "0.1.0",
+  "description": "Home Assistant Lovelace card for smart beds via smartbed-mqtt",
+  "type": "module",
+  "main": "dist/smartbed-card.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "start": "rollup -c rollup.config.js --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src test"
+  },
+  "keywords": [
+    "home-assistant",
+    "lovelace",
+    "custom-card",
+    "smartbed",
+    "smartbed-mqtt"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "custom-card-helpers": "^2.0.0",
+    "home-assistant-js-websocket": "^9.6.0",
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "rollup": "^4.20.0",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
